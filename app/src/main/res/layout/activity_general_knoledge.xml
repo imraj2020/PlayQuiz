@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    android:backgroundTint="#400A67"
+    android:background="#52147E"
+    tools:context=".GeneralKnoledgeActivity">
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:layout_marginBottom="100dp"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#60AAE4"
+        android:text="General Knowledge Quiz "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/QuestionNo"
+        android:textColor="#D400BF"
+        android:text="9">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TotalQuestion"
+        android:textColor="#CDDC39"
+        android:text="/20">
+
+    </TextView>
+
+</LinearLayout>
+
+
+
+
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Which country is known as the Land of the Rising Sun?"
+        android:padding="20dp"
+        android:textColor="#ffff"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge" />
+
+    <RadioGroup
+        android:id="@+id/optionsRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/option1RadioBtn"
+            android:textColor="#ffff"
+            android:padding="20dp"
+            android:text="Option1"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/option2RadioBtn"
+            android:textColor="#ffff"
+            android:padding="20dp"
+            android:text="Option2"/>
+
+
+        <RadioButton
+            android:id="@+id/option3RadioBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:padding="20dp"
+            android:text="option3 " />
+
+
+        <RadioButton
+            android:id="@+id/option4RadioBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:padding="20dp"
+            android:text="option4 " />
+
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/QuitQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginVertical="16dp"
+        android:backgroundTint="#E91E63"
+        android:text="Quit Quiz" />
+
+
+    <Button
+        android:id="@+id/nextQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginVertical="16dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#03A9F4"
+        android:text="Next" />
+    </LinearLayout>
+
+</LinearLayout>

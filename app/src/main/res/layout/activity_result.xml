@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#400A67"
+    android:background="#52147E"
+    tools:context=".ResultActivity">
+
+
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="80dp"
+        android:id="@+id/trophyimage"
+        android:src="@drawable/trophy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/resultslinear"
+        android:layout_below="@+id/trophyimage"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#ffff"
+            android:padding="10dp"
+            android:text="Result is:"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FA0505"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:text="6"
+            android:id="@+id/results">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#ffff"
+            android:padding="10dp"
+            android:text="Out Of:"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#E91E63"
+            android:text="20"
+            android:padding="10dp"
+            android:id="@+id/totalquestions">
+        </TextView>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultslinear"
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#4CAF50"
+            android:padding="10dp"
+            android:text="Share Result"></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/newQuizbtn"
+            android:padding="10dp"
+            android:backgroundTint="#03A9F4"
+            android:text="Take new Quiz"></Button>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
