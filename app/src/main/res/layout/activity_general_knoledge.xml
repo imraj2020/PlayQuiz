@@ -15,7 +15,8 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:padding="20dp"
-    android:layout_marginBottom="100dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="50dp"
     android:orientation="horizontal">
     <TextView
         android:layout_width="match_parent"
@@ -60,21 +61,30 @@
         android:id="@+id/optionsRadioGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="20dp"
         android:orientation="vertical">
+
 
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/option1RadioBtn"
-            android:textColor="#ffff"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/text_colour"
+            android:layout_marginBottom="10dp"
             android:padding="20dp"
             android:text="Option1"/>
+
 
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/option2RadioBtn"
-            android:textColor="#ffff"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/text_colour"
+            android:layout_marginBottom="10dp"
             android:padding="20dp"
             android:text="Option2"/>
 
@@ -83,7 +93,10 @@
             android:id="@+id/option3RadioBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#ffff"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/text_colour"
+            android:layout_marginBottom="10dp"
             android:padding="20dp"
             android:text="option3 " />
 
@@ -92,7 +105,10 @@
             android:id="@+id/option4RadioBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#ffff"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/text_colour"
+            android:layout_marginBottom="10dp"
             android:padding="20dp"
             android:text="option4 " />
 
