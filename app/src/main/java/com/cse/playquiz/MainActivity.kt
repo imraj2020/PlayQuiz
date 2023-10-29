@@ -1,6 +1,7 @@
 package com.cse.playquiz
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.renderscript.ScriptGroup.Binding
@@ -15,11 +16,26 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        binding.knowledgequiz.setOnClickListener(View.OnClickListener {
-            intent = Intent(this,GeneralKnoledgeActivity::class.java)
-         //   intent.putExtra("imraj", "10")
+        binding.videoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.video))
+
+
+       binding.videoView.setOnPreparedListener { mp ->
+            mp.isLooping = false // Set to true if you want video to loop
+            binding.videoView.start() // Start video playback
+        }
+
+        binding.next.setOnClickListener {
+            intent = Intent(this,NoteScreen::class.java)
+            //   intent.putExtra("imraj", "10")
             startActivity(intent)
-        })
+        }
+
+
+//        binding.knowledgequiz.setOnClickListener(View.OnClickListener {
+//            intent = Intent(this,GeneralKnoledgeActivity::class.java)
+//         //   intent.putExtra("imraj", "10")
+//            startActivity(intent)
+//        })
 
 
 

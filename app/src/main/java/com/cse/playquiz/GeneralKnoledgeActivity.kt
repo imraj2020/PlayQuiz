@@ -1,6 +1,7 @@
 package com.cse.playquiz
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -69,6 +70,7 @@ class GeneralKnoledgeActivity : AppCompatActivity() {
 
 
     private fun nextquestion() {
+
         val nextquestion = viewModel.nextQuestion()
 
         if (nextquestion != null) {
